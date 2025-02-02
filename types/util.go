@@ -43,7 +43,7 @@ func HashElems(fst, snd *big.Int, elems ...*big.Int) (*Hash, error) {
 		fst, snd, elems...)
 }
 
-// HandlingElemsAndByte32 hash an arry mixed with field and byte32 elements, turn each byte32 into
+// HandlingElemsAndByte32 hash an array, carry mixed with field and byte32 elements, turn each byte32 into
 // field elements first then calculate the hash with HashElems
 func HandlingElemsAndByte32(flagArray uint32, elems []Byte32) (*Hash, error) {
 
