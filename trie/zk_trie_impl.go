@@ -579,7 +579,7 @@ type NodeAux struct {
 // Proof defines the required elements for a MT proof of existence or
 // non-existence.
 type Proof struct {
-	// existence indicates wether this is a proof of existence or
+	// existence indicates weather, whether this is a proof of existence or
 	// non-existence.
 	Existence bool
 	// depth indicates how deep in the tree the proof goes.
