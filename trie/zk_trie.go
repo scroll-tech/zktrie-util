@@ -159,7 +159,7 @@ func (t *ZkTrie) Prove(key []byte, fromLevel uint, writeNode func(*Node) error) 
 // with the node that proves the absence of the key.
 //
 // If the trie contain value for key, the onHit is called BEFORE writeNode being called,
-// both the hitted leaf node and its sibling node is provided as arguments so caller
+// both the hit leaf node and its sibling node is provided as arguments so caller
 // would receive enough information for launch a deletion and calculate the new root
 // base on the proof data
 // Also notice the sibling can be nil if the trie has only one leaf
