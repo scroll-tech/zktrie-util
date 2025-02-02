@@ -5,7 +5,7 @@ import (
 )
 
 // HashElemsWithDomain performs a recursive poseidon hash over the array of ElemBytes, each hash
-// reduce 2 fieds into one, with a specified domain field which would be used in
+// reduce 2 fields, fiends into one, with a specified domain field which would be used in
 // every recursiving call
 func HashElemsWithDomain(domain, fst, snd *big.Int, elems ...*big.Int) (*Hash, error) {
 
