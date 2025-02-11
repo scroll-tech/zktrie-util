@@ -77,7 +77,7 @@ impl ZkTrieNode {
         self.trie_node
             .clone()
             .node_hash()
-            .expect("has caluclated")
+            .expect("has calculated")
             .as_ref()
             .try_into()
             .expect("same length")

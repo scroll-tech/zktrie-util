@@ -112,7 +112,7 @@ pub struct Node<H: Hashable> {
     pub child_right: Option<H>,
     // key is the node's key stored in a leaf node.
     pub node_key: H,
-    // value_preimage can store at most 256 byte32 as fields (represnted by BIG-ENDIAN integer)
+    // value_preimage can store at most 256 byte32 as fields (represented by BIG-ENDIAN integer)
     // and the first 24 can be compressed (each bytes32 consider as 2 fields), in hashing the compressed
     // elemments would be calculated first
     pub value_preimage: Vec<[u8; 32]>,

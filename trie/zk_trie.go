@@ -145,7 +145,7 @@ func (t *ZkTrie) Copy() *ZkTrie {
 	}
 }
 
-// Prove is a simlified calling of ProveWithDeletion
+// Prove is a simplified calling of ProveWithDeletion
 func (t *ZkTrie) Prove(key []byte, fromLevel uint, writeNode func(*Node) error) error {
 	return t.ProveWithDeletion(key, fromLevel, writeNode, nil)
 }
